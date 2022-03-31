@@ -1,12 +1,15 @@
+<h1>
+  <bc-menu></bc-menu> <!--Knows that bc-menu (comes from the selector in menu.components.ts) is not a html statement so looks at components -->
+</h1>
+
 <div>
   <label>Enter some text:</label>
   <input [(ngModel)]="aString1" type="text"> <!-- 2 way binding -->
   <button (click)="copy()">Copy</button>
   <span>{{ aString1 }}</span> <!-- aString1 put what typing in text box to show up as typing but aString2 has so have to press copy -->
 </div>
-
 <h1>{{ title }}</h1>
-<button (click) = "clicked()">Click me!</button>
+<button (click) = "clicked()">Click me to change!</button>
 <ul>
   <li *ngFor="let name of names">{{ name }} </li>
 </ul>
@@ -28,3 +31,5 @@
     </tr>
   </tbody>
 </table>
+<hr>
+<bc-footer></bc-footer> <!-- Comes from footer.components.ts -->

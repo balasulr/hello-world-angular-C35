@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
-@Component({ // Decorator called Component
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+@Component({ // @ Decorator which is a Component which has 3 key value pairs
+  selector: 'app-root', // Selector is a primary key for components
+  templateUrl: './app.component.html', // HTML & Css points to the html & css pages
+  styleUrls: ['./app.component.css'] // Code points to pages that have html & css in them
 })
 export class AppComponent { // Class
   title = 'The bootcamp';
